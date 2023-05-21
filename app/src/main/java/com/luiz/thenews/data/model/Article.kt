@@ -9,7 +9,7 @@ data class Article(
     @SerializedName("content")
     val content: Any,
     @SerializedName("description")
-    val description: Any,
+    val description: String,
     @SerializedName("publishedAt")
     val publishedAt: String,
     @SerializedName("source")

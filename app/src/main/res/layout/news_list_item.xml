@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="22dp"
+    android:padding="8dp"
+    android:background="@color/list_background">
+
+
+    <TextView
+        android:id="@+id/txt_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="News Title"
+        android:layout_marginHorizontal="12dp"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <ImageView
+        android:id="@+id/img_article"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintTop_toBottomOf="@id/txt_title"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/txt_decription"
+        android:text="DESCRIPTION"
+        android:textSize="16sp"
+        android:layout_marginTop="4dp"
+        android:layout_marginStart="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@id/img_article"
+        app:layout_constraintTop_toTopOf="@id/img_article"
+        />
+
+    <TextView
+        android:id="@+id/txt_published_at"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2023-01-01"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="4dp"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/txt_decription"
+        app:layout_constraintStart_toEndOf="@id/img_article"
+        app:layout_constraintBottom_toTopOf="@id/txt_source"
+        />
+
+    <TextView
+        android:id="@+id/txt_source"
+        android:text="Source"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="4dp"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/txt_published_at"
+        app:layout_constraintStart_toEndOf="@id/img_article"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
