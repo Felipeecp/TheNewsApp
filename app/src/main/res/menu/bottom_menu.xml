@@ -3,9 +3,10 @@
 
     <item android:id="@+id/newsFragment"
         android:title="@string/news_headlines"
-        android:icon="@drawable/baseline_live_tv_24"
+        android:icon="@drawable/baseline_live_tv_24_white"
         />
     <item android:id="@+id/savedFragment"
         android:title="@string/saved_news"
-        android:icon="@drawable/baseline_save_24"/>
+        android:iconTint="@color/search_background"
+        android:icon="@drawable/baseline_save_24_white"/>
 </menu>

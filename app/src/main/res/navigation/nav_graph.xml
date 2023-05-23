@@ -25,7 +25,11 @@
     </fragment>
     <fragment
         android:id="@+id/infoFragment"
-        android:name="com.luiz.thenews.infoFragment"
+        android:name="com.luiz.thenews.InfoFragment"
         android:label="fragment_info"
-        tools:layout="@layout/fragment_info" />
+        tools:layout="@layout/fragment_info" >
+        <argument
+            android:name="selected_article"
+            app:argType="com.luiz.thenews.data.model.Article" />
+    </fragment>
 </navigation>
