@@ -40,7 +40,7 @@ class SavedFragment : Fragment() {
                 putSerializable("selected_article", it)
             }
             findNavController().navigate(
-                R.id.action_newsFragment_to_infoFragment,
+                R.id.action_savedFragment_to_infoFragment,
                 bundle
             )
         }
@@ -64,7 +64,7 @@ class SavedFragment : Fragment() {
                 val position = viewHolder.adapterPosition
                 val article = newsAdapter.differ.currentList[position]
                 viewModel.deleteArticle(article)
-                Snackbar.make(view,"Deleted Succesfully", Snackbar.LENGTH_LONG).apply {
+                Snackbar.make(view,"Deleted Succesfully", Snackbar.LENGTH_SHORT).apply {
                     setAction("Undo"){
                         viewModel.saveArticle(article)
                     }

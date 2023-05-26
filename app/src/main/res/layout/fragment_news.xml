@@ -3,15 +3,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".NewsFragment"
     android:background="@color/layout_background"
     android:orientation="vertical">
 
-    <SearchView
+    <androidx.appcompat.widget.SearchView
         android:id="@+id/svNews"
         android:layout_width="match_parent"
-        android:searchIcon="@drawable/baseline_search_24_white"
         android:layout_height="wrap_content"
+        android:searchIcon="@drawable/baseline_search_24_white"
+        style="@style/App.Custom.SearchTextColor"
         android:background="@color/search_background"/>
 
     <androidx.recyclerview.widget.RecyclerView

@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import android.webkit.WebViewClient
 import androidx.navigation.fragment.navArgs
 import com.google.android.material.snackbar.BaseTransientBottomBar.LENGTH_LONG
+import com.google.android.material.snackbar.BaseTransientBottomBar.LENGTH_SHORT
 import com.google.android.material.snackbar.Snackbar
 import com.luiz.thenews.databinding.FragmentInfoBinding
 import com.luiz.thenews.presentation.viewmodel.NewsViewModel
@@ -40,7 +41,7 @@ class InfoFragment : Fragment() {
 
         fragmentInfoBinding.floatingActionButton.setOnClickListener {
             viewModel.saveArticle(article)
-            Snackbar.make(view,"Saved Successfully!",LENGTH_LONG).show()
+            Snackbar.make(view,"Saved Successfully!",LENGTH_SHORT).show()
         }
     }
 }

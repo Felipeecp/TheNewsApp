@@ -8,8 +8,8 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.AbsListView
 import android.widget.Adapter
-import android.widget.SearchView
 import android.widget.Toast
+import androidx.appcompat.widget.SearchView
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -160,15 +160,11 @@ class NewsFragment : Fragment() {
             }
         )
 
-        fragmentNewsBinding.svNews.setOnCloseListener (
-            object : SearchView.OnCloseListener{
-                override fun onClose(): Boolean {
-                    initRecyclerView()
-                    viewNewsList()
-                    return false
-                }
-            }
-        )
+        fragmentNewsBinding.svNews.setOnCloseListener {
+            initRecyclerView()
+            viewNewsList()
+            false
+        }
     }
 
     fun viewSearchedNews(){

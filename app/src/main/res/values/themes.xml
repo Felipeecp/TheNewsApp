@@ -3,13 +3,15 @@
     <style name="Base.Theme.TheNews" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
          <item name="colorPrimary">@color/search_background</item>
+        <item name="android:textColorSecondary">@color/white</item>
+        <item name="android:editTextColor">@android:color/white</item>
     </style>
     
     <style name="App.Custom.Indicator" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
         <item name="android:color">@color/bottom_nav_activate</item>
     </style>
 
-    <style name="App.Custom.SearchTextColor" parent="TextAppearance.Material3.SearchView">
+    <style name="App.Custom.SearchTextColor" parent="Widget.AppCompat.SearchView.ActionBar">
         <item name="android:editTextColor">@android:color/white</item>
     </style>
 

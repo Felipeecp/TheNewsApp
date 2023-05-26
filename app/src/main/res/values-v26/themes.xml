@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="App.Custom.SearchTextColor" parent="Widget.AppCompat.SearchView">
+        <item name="android:editTextColor">@android:color/white</item>
+        <item name="android:iconTint">@android:color/white</item>
+    </style>
+</resources>
